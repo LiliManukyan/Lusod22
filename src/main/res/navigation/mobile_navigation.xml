@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.lusod2.ui.home.HomeFragment"
+        android:label="@string/Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_account"
+        android:name="com.example.lusod2.ui.home.accountFragment"
+        android:label="@string/my_account"
+        tools:layout="@layout/fragment_account"
+        tools:ignore="DuplicateIds" />
+
+    <fragment
+        android:id="@+id/nav_today"
+        android:name="com.example.lusod2.ui.slideshow.TodayFragment"
+        android:label="@string/today_deals"
+        tools:layout="@layout/fragment_today" />
+    <fragment
+        android:id="@+id/nav_all"
+        android:name="com.example.lusod2.ui.slideshow.AllFragment"
+        android:label="@string/today_deals"
+        tools:layout="@layout/fragment_all" />
+    <fragment
+        android:id="@+id/nav_new"
+        android:name="com.example.lusod2.ui.slideshow.NewFragment"
+        android:label="@string/today_deals"
+        tools:layout="@layout/fragment_new" />
+    <fragment
+        android:id="@+id/nav_dictionary"
+        android:name="com.example.lusod2.ui.slideshow.DictiinaryFragment"
+        android:label="@string/dictionary"
+        tools:layout="@layout/fragment_dictionary" />
+</navigation>
